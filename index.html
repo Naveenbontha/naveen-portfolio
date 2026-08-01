@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naveen Bontha | Portfolio</title>
+  <meta name="description" content="Portfolio of Naveen Bontha. Software Engineer, Full Stack Developer, and AI Engineer building scalable web applications and AI-powered software.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Glassmorphic Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-accent">&lt;</span>NaveenBontha<span class="logo-accent"> /&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-container">
+      <div class="hero-content reveal reveal-left">
+        <div class="hero-intro-tag">
+          <span class="pulse-dot"></span> Available for Opportunities
+        </div>
+        <h1 class="hero-title-name">Naveen Bontha</h1>
+        <div class="hero-subtitle-container">
+          <span class="hero-role-tag">Software Engineer</span>
+          <span class="hero-role-divider">•</span>
+          <span class="hero-role-tag">Full Stack Developer</span>
+          <span class="hero-role-divider">•</span>
+          <span class="hero-role-tag">AI Engineer</span>
+        </div>
+        <p class="hero-quote">
+          "I build scalable web applications and AI-powered software."
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary" id="hero-view-projects">View Projects</a>
+          <a href="assets/Naveen_Bontha_Resume.pdf" download="Naveen_Bontha_Resume.pdf" class="btn btn-secondary" id="hero-download-resume">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download Resume
+          </a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper reveal reveal-scale delay-200">
+        <div class="hero-image-glow"></div>
+        <img src="assets/avatar.jpg" alt="Naveen Bontha avatar illustration" class="hero-avatar" id="hero-avatar">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="about-section" id="about">
+    <div class="about-container glass-card reveal reveal-up">
+      <div class="section-header" style="margin-bottom: 2rem; text-align: left;">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title" style="text-align: left;">Professional Summary</h2>
+      </div>
+      <div class="about-content">
+        <p>
+          I am an Integrated M.Tech in Software Engineering student at Vellore Institute of Technology (VIT), Amaravati. As a passionate developer, I blend structured software engineering paradigms with state-of-the-art Generative AI capabilities to solve real-world problems. 
+        </p>
+        <p>
+          My technical expertise spans building secure, multi-tenant SaaS architectures, configuring local database synchronization pipelines, and implementing convolutional neural networks for computer vision applications. In addition to technical execution, my experiences as a twice-winning volleyball captain have taught me the values of communication, mentoring, and collaborative leadership, which I actively bring to product development cycles.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section (Main Focus) -->
+  <section class="projects-section" id="projects">
+    <div class="section-header reveal reveal-fade">
+      <span class="section-tag">Showcase</span>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-desc">Fully built, functional software solutions demonstrating scalability, database integrity, and machine learning integrations.</p>
+    </div>
+
+    <div class="projects-grid">
+      
+      <!-- Project 1: StayNest AI (Leading project - starred ⭐) -->
+      <article class="project-card featured-project reveal reveal-up" data-category="web">
+        <div class="project-card-badge">⭐ StayNest AI</div>
+        <div class="project-content">
+          <div class="project-icon-row">
+            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+            <span class="project-tag">Hostel &amp; PG SaaS</span>
+          </div>
+          <h3 class="project-title">StayNest AI</h3>
+          <p class="project-description">
+            A multi-tenant SaaS hostel management platform automating tenant onboarding, room allocations, rentals, and visitor registries. Integrates Google Gemini AI to automatically summarize complaint logs, generate rent reminders, and run analytics over 100+ simulated tenant accounts.
+          </p>
+          
+          <div class="project-meta-details">
+            <div class="meta-item">
+              <strong>Role:</strong> Lead Fullstack Developer &amp; Architect (Engineered relational MySQL databases, JWT route protection, role-based access control, and generative AI automated workflows).
+            </div>
+            <div class="meta-item">
+              <strong>Tech Stack:</strong>
+              <div class="tech-tags">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Gemini AI</span>
+                <span class="tech-tag">Prisma ORM</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-links">
+            <a href="https://github.com/Naveenbontha" target="_blank" class="project-link-btn" id="link-staynest-github">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: Brain Tumor Detection -->
+      <article class="project-card reveal reveal-up delay-150" data-category="ai">
+        <div class="project-content">
+          <div class="project-icon-row">
+            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="2" ry="2"/>
+              <path d="M12 18V6"/>
+              <path d="M6 12h12"/>
+            </svg>
+            <span class="project-tag">Deep Learning</span>
+          </div>
+          <h3 class="project-title">Brain Tumor Detection</h3>
+          <p class="project-description">
+            Medical classification software applying deep learning algorithms to predict and detect brain tumor boundaries and categories from MRI scan images, aiding diagnostics workflow automation.
+          </p>
+          
+          <div class="project-meta-details">
+            <div class="meta-item">
+              <strong>Role:</strong> Lead AI Developer (Built Convolutional Neural Networks (CNN), handled image preprocessing with OpenCV, and evaluated models using Precision, Recall, and ROC-AUC metrics).
+            </div>
+            <div class="meta-item">
+              <strong>Tech Stack:</strong>
+              <div class="tech-tags">
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">Keras</span>
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">NumPy</span>
+                <span class="tech-tag">Python</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-links">
+            <a href="https://github.com/Naveenbontha" target="_blank" class="project-link-btn" id="link-braintumor-github">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3: Hospital Management System -->
+      <article class="project-card reveal reveal-up delay-300" data-category="web">
+        <div class="project-content">
+          <div class="project-icon-row">
+            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+            </svg>
+            <span class="project-tag">Full-Stack Database</span>
+          </div>
+          <h3 class="project-title">Hospital Management System</h3>
+          <p class="project-description">
+            A comprehensive clinical workflow system supporting patient indexing records, scheduling timetables, doctor slot coordination, and pharmacy inventory tables. Optimized with clean Bootstrap dashboards.
+          </p>
+          
+          <div class="project-meta-details">
+            <div class="meta-item">
+              <strong>Role:</strong> Lead Database &amp; Frontend Engineer (Modeled relational data schema, ensured 3NF table normalization, and coded frontend interfaces).
+            </div>
+            <div class="meta-item">
+              <strong>Tech Stack:</strong>
+              <div class="tech-tags">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Bootstrap</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-links">
+            <a href="https://github.com/Naveenbontha" target="_blank" class="project-link-btn" id="link-hospital-github">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section class="skills-section" id="skills">
+    <div class="skills-container glass-card reveal reveal-up">
+      <div class="section-header">
+        <span class="section-tag">Technical Toolbox</span>
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal reveal-scale delay-100">
+          <h4>Frontend</h4>
+          <p>React.js, HTML5, CSS3, Bootstrap</p>
+        </div>
+        <div class="skill-category reveal reveal-scale delay-200">
+          <h4>Backend</h4>
+          <p>Node.js, Express.js, REST APIs, JWT, Role-Based Access Control (RBAC)</p>
+        </div>
+        <div class="skill-category reveal reveal-scale delay-300">
+          <h4>AI &amp; ML</h4>
+          <p>Google Gemini API, TensorFlow, Keras, OpenCV, Prompt Engineering, AI Agents, n8n, Computer Vision, CNN</p>
+        </div>
+        <div class="skill-category reveal reveal-scale delay-400">
+          <h4>Databases</h4>
+          <p>MySQL, PostgreSQL, SQLite, Prisma ORM</p>
+        </div>
+        <div class="skill-category reveal reveal-scale delay-500">
+          <h4>Programming</h4>
+          <p>Java, Python, JavaScript, SQL, C</p>
+        </div>
+        <div class="skill-category reveal reveal-scale delay-500">
+          <h4>Tools &amp; Concepts</h4>
+          <p>Git, GitHub, VS Code, Postman, npm, OOP, DSA, SDLC (Agile/Scrum), DBMS, Computer Networks, Linux</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Mentoring Section -->
+  <section class="experience-section" id="experience">
+    <div class="section-header reveal reveal-fade">
+      <span class="section-tag">History</span>
+      <h2 class="section-title">Teaching, Leadership &amp; Internships</h2>
+      <p class="section-desc">Practical applications and project development cycles in collegiate ecosystems.</p>
+    </div>
+
+    <div class="experience-timeline">
+      
+      <!-- Mentorship Highlight Card 1 -->
+      <div class="timeline-card highlighted-card reveal reveal-left" id="exp-sports-mentor">
+        <div class="card-featured-badge">Leadership Role</div>
+        <div class="timeline-header">
+          <div class="timeline-role-info">
+            <h3 class="timeline-role">Volleyball Team Captain &amp; Athletic Mentor</h3>
+            <span class="timeline-org">VIT Amaravati Zonal Athletic Delegation</span>
+          </div>
+          <span class="timeline-date">Sports Leadership</span>
+        </div>
+        <div class="timeline-body">
+          <p class="timeline-summary">
+            Leading, training, and mentoring a competitive squad of collegiate athletes, directing practices, game strategies, and team cohesion.
+          </p>
+          <ul class="timeline-bullet-list">
+            <li><strong>Championship Leadership:</strong> Guided the team to victory as Captain in the College Intramural Volleyball Tournament twice.</li>
+            <li><strong>Zonal Selection:</strong> Chosen to represent the college at the prestigious South Zone Volleyball Tournament as Team Captain.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mentorship Highlight Card 2 -->
+      <div class="timeline-card reveal reveal-right" id="exp-peer-tutor">
+        <div class="timeline-header">
+          <div class="timeline-role-info">
+            <h3 class="timeline-role">Peer Coding Mentor</h3>
+            <span class="timeline-org">Academic Lab Circles</span>
+          </div>
+          <span class="timeline-date">Mentorship</span>
+        </div>
+        <div class="timeline-body">
+          <p class="timeline-summary">
+            Helping fellow students demystify programming labs and database queries during peer study sessions.
+          </p>
+          <ul class="timeline-bullet-list">
+            <li><strong>Lab Mentorship:</strong> Assisted 50+ students in debugging Object-Oriented Programming (Java), Data Structures, and SQL design tasks.</li>
+            <li><strong>Concept Breakdowns:</strong> Translated complex structures like binary trees, graph traversals, and MySQL table normalization steps into approachable diagrams for peers.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Industry Role Card -->
+      <div class="timeline-card reveal reveal-left" id="exp-saas-dev">
+        <div class="timeline-header">
+          <div class="timeline-role-info">
+            <h3 class="timeline-role">SaaS Project Developer</h3>
+            <span class="timeline-org">StayNest Suite</span>
+          </div>
+          <span class="timeline-date">Development Cycle</span>
+        </div>
+        <div class="timeline-body">
+          <p class="timeline-summary">
+            Creating scalable automation software models and workflows to solve student housing challenges.
+          </p>
+          <ul class="timeline-bullet-list">
+            <li><strong>Fullstack System:</strong> Built robust user flows for room rentals, maintenance requests, and payment dashboards.</li>
+            <li><strong>AI integration:</strong> Implemented generative AI summaries using the Gemini API to categorize complaint logs automatically.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section class="achievements-section" id="achievements">
+    <div class="achievements-container glass-card reveal reveal-up">
+      <div class="section-header">
+        <span class="section-tag">Competitiveness</span>
+        <h2 class="section-title">Key Achievements</h2>
+      </div>
+      
+      <div class="achievements-grid">
+        <div class="achievement-card reveal reveal-scale delay-100">
+          <div class="achievement-icon">🏆</div>
+          <h4>HackerRank Badges</h4>
+          <p class="achievement-desc">Awarded the **Java Programming Gold Badge** and **Python Programming Gold Badge** for advanced problem-solving assessments.</p>
+        </div>
+        
+        <div class="achievement-card reveal reveal-scale delay-250">
+          <div class="achievement-icon">🏐</div>
+          <h4>Volleyball Captaincy</h4>
+          <p class="achievement-desc">Led the university volleyball team to **2x Intramural Championships** and captained the college at the South Zone Volleyball Tournament.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="education-section" id="education">
+    <div class="education-container">
+      <div class="education-info reveal reveal-fade">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">Education &amp; Certifications</h2>
+        <p class="section-desc">Academic path and accredited programming specifications.</p>
+      </div>
+
+      <div class="education-grid">
+        
+        <!-- Degree -->
+        <div class="edu-card reveal reveal-up" id="edu-degree">
+          <div class="edu-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+            </svg>
+          </div>
+          <h3>Degree</h3>
+          <p class="edu-card-title">Integrated M.Tech in Software Engineering</p>
+          <p class="edu-card-subtitle">Vellore Institute of Technology (VIT), Amaravati</p>
+          <p class="edu-card-subtitle">CGPA: 8.32</p>
+        </div>
+
+        <!-- School -->
+        <div class="edu-card reveal reveal-up delay-150" id="edu-school">
+          <div class="edu-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            </svg>
+          </div>
+          <h3>Pre-University</h3>
+          <p class="edu-card-title">Intermediate (MPC) - 87%</p>
+          <p class="edu-card-subtitle">Sri Chaitanya Junior College, Vijayawada</p>
+          <p class="edu-card-subtitle">SSC CGPA: 9.7 (Sri Chaitanya School)</p>
+        </div>
+
+        <!-- Certifications -->
+        <div class="edu-card reveal reveal-up delay-300" id="edu-certs">
+          <div class="edu-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="8" r="7"/>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+            </svg>
+          </div>
+          <h3>Certifications</h3>
+          <ul class="edu-certs-list">
+            <li>Java Programming - DICE</li>
+            <li>Privacy and Security in Online Social Media - NPTEL</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Connect Section -->
+  <section class="contact-section" id="contact">
+    <div class="contact-bg-glow"></div>
+    <div class="contact-container glass-card reveal reveal-scale">
+      <div class="contact-header">
+        <h2 class="contact-title">Let's Connect!</h2>
+        <p class="contact-desc">
+          Looking for a partner for technical projects, code review collaborations, or volleyball practice matches? Get in touch!
+        </p>
+      </div>
+
+      <div class="contact-links-grid">
+        <!-- LinkedIn Link -->
+        <a href="https://www.linkedin.com/in/naveen-bontha/" target="_blank" class="contact-btn-card reveal reveal-up delay-100">
+          <div class="contact-btn-icon icon-linkedin">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </div>
+          <span class="contact-btn-label">LinkedIn</span>
+          <span class="contact-btn-value">Naveen Bontha</span>
+        </a>
+
+        <!-- GitHub Link -->
+        <a href="https://github.com/Naveenbontha" target="_blank" class="contact-btn-card reveal reveal-up delay-200">
+          <div class="contact-btn-icon icon-github">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </div>
+          <span class="contact-btn-label">GitHub</span>
+          <span class="contact-btn-value">@Naveenbontha</span>
+        </a>
+
+        <!-- Email Link -->
+        <a href="mailto:bonthanaveen12@gmail.com" class="contact-btn-card reveal reveal-up delay-300">
+          <div class="contact-btn-icon icon-email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <span class="contact-btn-label">Email</span>
+          <span class="contact-btn-value">bonthanaveen12@gmail.com</span>
+        </a>
+
+        <!-- Phone Card -->
+        <button class="contact-btn-card reveal reveal-up delay-400" id="btn-copy-discord">
+          <div class="contact-btn-icon icon-phone">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </div>
+          <span class="contact-btn-label">Phone</span>
+          <span class="contact-btn-value" id="discord-username">+91 9959605859</span>
+          <span class="copy-success-tooltip" id="copy-tooltip">Copied!</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Naveen Bontha. Designed with student collaboration in mind.</p>
+      <p class="footer-subtext">Built using HTML5, CSS Grid, and custom Javascript algorithms.</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
